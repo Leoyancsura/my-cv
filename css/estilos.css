@@ -11,6 +11,12 @@ html{
     scroll-behavior: smooth;
 }
 
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+
 /* SECCION INICIO */
 .inicio{
     background: linear-gradient(rgba(188, 172, 128,.8), rgba(0, 0, 0,.8)), 
@@ -123,11 +129,6 @@ html{
     top: -100px;
     transform: translateY(-10%);
 }
-/* estilos generales */
-.titulo-seccion{
-    font-family: "Yellowtail";
-    font-size: 1.5rem;
-}
 
 /* SECCION SOBRE MI */
 .sobremi{
@@ -174,4 +175,57 @@ html{
     border: 2px solid #940253;
     line-height: 40px;
     border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* SECCION HABILIDADES */
+.habilidades{
+    padding: 0px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(188, 172, 128,.8), rgba(0, 0, 0,.8)), 
+    url("recursos/skillbg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.habilidades .contenido-seccion .fila .col{
+   width: 47%;
+   text-align: left;
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
 }
